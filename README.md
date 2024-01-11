@@ -1,2 +1,2 @@
 # siteSimples
-criando um site simles com o curso da bradesco
+criando um site simples com o curso da bradesco
