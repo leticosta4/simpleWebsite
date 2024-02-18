@@ -1,24 +1,30 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"> <!--initial-scale=1.0"-->
-    <link rel="icon" href="tomatoes-cherry-svgrepo-com.svg"> <!--a imagem n ta aparecendo-->
+    <link rel="icon" href="tomatoes-cherry-svgrepo-com.svg"> 
     <title>Vegetarian Recipes</title>
-    <link rel="stylesheet" href="main.css"> <!--linkando com o css externo-->
+    <link rel="stylesheet" href="main.css"> 
 </head>
-<body>
-    <h1> Welcome to your Vegetarian Recipes Website!! </h1>
-    <p id="msg"> Here we have some of our favorites: </p> <!--atributo id p estilizar um elemento-->
+<body class="light-theme"> 
+    <h1> 
+        <img src="tomatoes-cherry-svgrepo-com.svg" width="30" height="30" alt="">
+        Welcome to your Vegetarian Recipes Website!! 
+    </h1>
+    <h3 id="msg"> Here we have some of our favorites: </h3>
     <ul>
-        <!--atributo de classe p estilizar todos os elementos da mesma classe-->
         <li class="list"> Carrot "notdog" </li> 
         <li class="list"> Vegan Yakisoba </li>
-        <li class="list"> Chickpea Burguers</li> <!--talvez tirar o class="list" daqui depois-->
+        <li class="list"> Chickpea Burguers</li> 
     </ul>
+    <div>
+        <button class="btn"> Dark theme </button>
+    </div>
     <footer class="container">
         <p>&copy; By Letícia Almeida 2024</p>
     </footer>
     <script src="app.js"></script>
+    <noscript> You need to enable JavaScript to view the full website </noscript> 
 </body>
 </html>
