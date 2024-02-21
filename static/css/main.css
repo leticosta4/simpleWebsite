@@ -2,10 +2,14 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+#checkOut {
+  color: #073eb6;
+}
+
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: #5a5a5a;
+    color: #000000;
   }
   
   /* MARKETING CONTENT
@@ -24,12 +28,20 @@ body {
     letter-spacing: -.05rem;
   }
   
+  .bookAuthor {
+    font-style: italic;
+    color: #190847;
+  }
+  
+
+  h6 {
+    color: #5a5a5a;
+  }
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */
   
   @media (min-width: 40em) {
-    /* Bump up size of carousel content */
     .featurette-heading {
       font-size: 50px;
     }
