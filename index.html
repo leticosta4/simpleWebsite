@@ -7,68 +7,83 @@
     <meta name="author" content="">
     <link rel="icon" href="static/images/book-closed-svgrepo-com.svg">
 
-    <title>Book Recomendations</title>
+    <title>Book Recomendations By Let</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/carousel/">
 
     <!-- Bootstrap core CSS -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="static/css/main.css" rel="stylesheet"> 
 
-    <body>
+    <body class="light-theme">
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> <!--depois mudar esse bg-dark para outra cor que eu queira-->
-        <a class="navbar-brand" href="#">
+      <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a id="mainName" class="navbar-brand" href="">
             <img src="static/images/book-closed-svgrepo-com.svg" width="30" height="30" alt="">
-            Book Recomendations
-        </a>
-        <button class="btn" type="submit">Theme button</button> 
-        <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
-           <button class="btn btn my-2 my-sm-0" type="submit">Theme button</button> 
-        </div> -->
+            Book Recomendations By Let
+        </a>   
+        <button id= "languageBtn" class="btn" type="submit">PORTUGUESE</button> 
+        <button id="themeBtn" class="btn" type="submit">Dark theme/Tema escuro</button>
       </nav>
     </header>
-
+        
     <main role="main">
-      <div class="jumbotron">
+      <div id="jumbo" class="jumbotron">
         <div class="container">
-          <h1 class="display-3"> It's time for some book recomendations </h1>
-          <p> Here you can take a look at some different books which contain drama, suspense, realism, thoughtful and historical narratives and much more. Hope you enjoy these recomendations! </p>
-          <h5 id="checkOut"> Check it out now!! </h5>
+          <!--tentando fazer a mudança de idioma com a classe lang-->
+          <h1 id="welcome" class="lang display-3" data-en="It's time for some book recomendations" data-pt="Que tal algumas recomendações de livros?!"> 
+            It's time for some book recomendations 
+          </h1>
+          <p class="lang sinopse"
+             data-en="Here you can take a look at some different books which contain drama, suspense, action, romance, realism, thoughtful and historical narratives and much more. Hope you enjoy these recomendations!"
+             data-pt="Aqui você pode dar uma olhada em alguns livros diferentes que contêm drama, suspense, ação, romance, realismo, narrativas reflexivas e históricas e muito mais. Espero que aproveite essas recomendações!">
+            
+             Here you can take a look at some different books which contain drama, suspense, action, romance, realism, thoughtful and historical narratives and much more. Hope you enjoy these recomendations!
+          </p>
+          <h4 class="lang" data-en="Check it out now!!" data-pt="Checa só essa lista!!"> Check it out now!! </h4>
         </div>
       </div>
 
       <!-- Marketing messaging and featurettes
       ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
+      <!-- Wrap the rest of the page in another container to center all the content. (IMPORTANT) -->
 
       <div class="container marketing">
         <!-- START THE FEATURETTES -->
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading"> The Seven Husbands of Evelyn Hugo </h2>
-            <h4 class="bookAuthor" id="fav"> Taylor Jenkings Reid </h4>
+            <h2 class="lang featurette-heading" data-en="The Seven Husbands of Evelyn Hugo" data-pt="Os Sere Maridos de Evelyn Hugo"> 
+                The Seven Husbands of Evelyn Hugo 
+            </h2>
+            <h4>Taylor Jenkings Reid</h4>
             <!--se quiser aumentar o tamanho da fonte, adicione class="lead" na tag abaixo-->
-            <p>'The Seven Husbands of Evelyn Hugo' follows aging Hollywood icon Evelyn Hugo as she reveals her scandalous life story to unknown magazine reporter Monique Grant. Monique, struggling in her personal and professional life, is surprised by Evelyn's choice and is determined to use this opportunity to kickstart her career. As Evelyn recounts her journey from the 1950s to the 1980s, including seven marriages and unexpected friendships, Monique becomes deeply connected to the star. However, as the story unfolds, it becomes evident that Evelyn's life is intertwined with Monique's in tragic and irreversible ways.  Despite what the title may suggest, this novel doesn't really focus on the husbands, but rather Evelyn herself, where we quickly learn that there is much more to her than meets the eye.</p>
-            <h6> Get the book through Amazon here: </h6>
-            <p>
-              <a href="https://www.amazon.com.br/Os-sete-maridos-Evelyn-Hugo/dp/8584391509/ref=sr_1_1?crid=1J30US7XO4JC3&dib=eyJ2IjoiMSJ9.EFJsiNCi9NH8fQtP1AMipNN4eYGAFLk1FNK2EKBTtUMqdAYrL70oUZch-YAYHz3su924DKdYHrtbTl4mH7svevoEOinaWJULtdmi9BjsrgMqhAV6qxvJOx6tFXEFBTRiCq-cYIJ-s9_ZrHhVBceu1tHbpnzA7v7tJytwNN0mgnMCe6N-g0FLvJmi7jFR8NdFiqYF5DBF5lOkU-MmdOuDzLp0jJisErAIdaHVnKmXLLavhag8rnxN2UNg4_3U54yOerfFJUOWzEtDwaCxl1BcvRyoJl6VLapyu-GyYRBUJ80.QAezwvG743OIkvepJZ2scEDJLfW23RvVBje79a70xPU&dib_tag=se&keywords=os+sete+maridos+de+evelyn+hugo&qid=1708380999&sprefix=os+sete%2Caps%2C244&sr=8-1"> Portuguese edition </a>
-              &middot;
-              <a href= "https://www.amazon.com.br/Seven-Husbands-Evelyn-Hugo-Tiktok/dp/1398515698/ref=sr_1_1?crid=3TPKJNZ3ZTS33&dib=eyJ2IjoiMSJ9.VvWDUaUnQ0A8b_KK1qrs3GlHVM5aGyavy58brLe3SMvJgIVZdZd_x8DbmDvzJ3HJ1j2kHl3XzKvKU1J-jdPNgn6gKzhEC4RkD3-m3r7q6Qa_Jtdu0J5BIyE_aY-sU-mG6QhFeDza_piF3xlnI8A5OzOarHcefvxFPWGD56JPCKp3kyzrfeG0_hM5E1RIvjSAvC-Jq72qHpJ360Vc5WkOJG5pRODD8rVpUtxsRJs-i-mH_fpTEPZawuhGgMKSpsDKQzCC4QEkWWmc9uZ-cKSDu90Fjgo_b4W9KRd3fdZntWQ.aF4nkp8zuI1V7pFejrUxTyD1FKeoMtgaJGOogqjQ7LU&dib_tag=se&keywords=the+seven+husbands+of+evelyn+hugo&qid=1708443255&sprefix=the+se%2Caps%2C200&sr=8-1"> English edition </a>
+            <p class="lang sinopse" 
+               data-en="'The Seven Husbands of Evelyn Hugo' follows aging Hollywood icon Evelyn Hugo as she reveals her scandalous life story to unknown magazine reporter Monique Grant. Monique, struggling in her personal and professional life, is surprised by Evelyn's choice and is determined to use this opportunity to kickstart her career. As Evelyn recounts her journey from the 1950s to the 1980s, including seven marriages and unexpected friendships, Monique becomes deeply connected to the star. However, as the story unfolds, it becomes evident that Evelyn's life is intertwined with Monique's in tragic and irreversible ways.  Despite what the title may suggest, this novel doesn't really focus on the husbands, but rather Evelyn herself, where we quickly learn that there is much more to her than meets the eye."
+               data-pt="'Os Sete Maridos de Evelyn Hugo' acompanha a icônica estrela de Hollywood Evelyn Hugo enquanto ela revela sua escandalosa história de vida à desconhecida repórter de revista Monique Grant. Monique, lutando em sua vida pessoal e profissional, fica surpresa com a escolha de Evelyn e está determinada a usar essa oportunidade para impulsionar sua carreira. Enquanto Evelyn relata sua jornada dos anos 1950 aos anos 1980, incluindo sete casamentos e amizades inesperadas, Monique se conecta profundamente à estrela. No entanto, à medida que a história se desenrola, fica evidente que a vida de Evelyn está entrelaçada com a de Monique de maneiras trágicas e irreversíveis. Apesar do que o título possa sugerir, este romance não se concentra realmente nos maridos, mas sim na própria Evelyn, a qual se revela muito mais do que aparenta ser.">
+              'The Seven Husbands of Evelyn Hugo' follows aging Hollywood icon Evelyn Hugo as she reveals her scandalous life story to unknown magazine reporter Monique Grant. Monique, struggling in her personal and professional life, is surprised by Evelyn's choice and is determined to use this opportunity to kickstart her career. As Evelyn recounts her journey from the 1950s to the 1980s, including seven marriages and unexpected friendships, Monique becomes deeply connected to the star. However, as the story unfolds, it becomes evident that Evelyn's life is intertwined with Monique's in tragic and irreversible ways.  Despite what the title may suggest, this novel doesn't really focus on the husbands, but rather Evelyn herself, where we quickly learn that there is much more to her than meets the eye.
             </p>
-            <h6> Read more on: </h6>
+            <h6 class="lang" data-en="Get the book through Amazon here:" data-pt="Compre o livro pela Amazon aqui:">Get the book through Amazon here:</h6>
             <p>
-              <a href="https://www.goodreads.com/book/show/32620332-the-seven-husbands-of-evelyn-hugo"> goodreads.com </a>
+              <a class="lang" data-en="Portuguese edition" data-pt="Edição em português" 
+                href="https://www.amazon.com.br/Os-sete-maridos-Evelyn-Hugo/dp/8584391509/ref=sr_1_1?crid=1J30US7XO4JC3&dib=eyJ2IjoiMSJ9.EFJsiNCi9NH8fQtP1AMipNN4eYGAFLk1FNK2EKBTtUMqdAYrL70oUZch-YAYHz3su924DKdYHrtbTl4mH7svevoEOinaWJULtdmi9BjsrgMqhAV6qxvJOx6tFXEFBTRiCq-cYIJ-s9_ZrHhVBceu1tHbpnzA7v7tJytwNN0mgnMCe6N-g0FLvJmi7jFR8NdFiqYF5DBF5lOkU-MmdOuDzLp0jJisErAIdaHVnKmXLLavhag8rnxN2UNg4_3U54yOerfFJUOWzEtDwaCxl1BcvRyoJl6VLapyu-GyYRBUJ80.QAezwvG743OIkvepJZ2scEDJLfW23RvVBje79a70xPU&dib_tag=se&keywords=os+sete+maridos+de+evelyn+hugo&qid=1708380999&sprefix=os+sete%2Caps%2C244&sr=8-1"> 
+                Portuguese edition
+              </a>
               &middot;
-              <a href="https://baos.pub/seven-valuable-life-lessons-from-the-seven-husbands-of-evelyn-hugo-28c996c1fb74"> baos.pub </a>
+              <a class="lang" data-en="English edition" data-pt="Edição em inglês"
+                 href= "https://www.amazon.com.br/Seven-Husbands-Evelyn-Hugo-Tiktok/dp/1398515698/ref=sr_1_1?crid=3TPKJNZ3ZTS33&dib=eyJ2IjoiMSJ9.VvWDUaUnQ0A8b_KK1qrs3GlHVM5aGyavy58brLe3SMvJgIVZdZd_x8DbmDvzJ3HJ1j2kHl3XzKvKU1J-jdPNgn6gKzhEC4RkD3-m3r7q6Qa_Jtdu0J5BIyE_aY-sU-mG6QhFeDza_piF3xlnI8A5OzOarHcefvxFPWGD56JPCKp3kyzrfeG0_hM5E1RIvjSAvC-Jq72qHpJ360Vc5WkOJG5pRODD8rVpUtxsRJs-i-mH_fpTEPZawuhGgMKSpsDKQzCC4QEkWWmc9uZ-cKSDu90Fjgo_b4W9KRd3fdZntWQ.aF4nkp8zuI1V7pFejrUxTyD1FKeoMtgaJGOogqjQ7LU&dib_tag=se&keywords=the+seven+husbands+of+evelyn+hugo&qid=1708443255&sprefix=the+se%2Caps%2C200&sr=8-1"> 
+                 English edition
+                </a>
+            </p>
+            <h6 class="lang" data-en="Read more on:" data-pt="Leia mais em:">Read more on:</h6>
+            <p>
+              <a href="https://www.goodreads.com/book/show/32620332-the-seven-husbands-of-evelyn-hugo">goodreads.com</a>
+              &middot;
+              <a href="https://baos.pub/seven-valuable-life-lessons-from-the-seven-husbands-of-evelyn-hugo-28c996c1fb74">baos.pub</a>
             </p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="static/images/tshoeh.jpg" alt="Generic placeholder image">
-            <!--data-src="holder.js/500x500/auto"-->
+            <img class="featurette-image img-fluid mx-auto" src="static/images/tshoeh.jpg" >
           </div>
         </div>
 
@@ -76,22 +91,36 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading"> They Both Die at The End </h2>
-            <h4 class="bookAuthor"> Adam Silvera </h4>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            <h6> Get the book through Amazon here: </h6>
-            <p>
-              <a href= "https://www.amazon.com.br/Os-Dois-Morrem-No-Final/dp/655560302X/ref=mp_s_a_1_1?crid=1NK7YF4D5LXK6&dib=eyJ2IjoiMSJ9.uB9gm63VaSAoKe268zT0lm_iihAsG4TNGFQRWzXcEBD4hKo29cD6foalhTSzpcqL1QsnmPtlDzwzEu1qMFcL6sqq3s29QS4MBn2Ncf6akNXO6NJBrAetPMqw359KkmK8qUFcwVz0DhmeF3CJnxK5I5UOhIBFOCy7-8KcvhOixCmCLt1qKsOgeBy4MEIx0m7fnE5a-FtTSuFpIeghogtgsA.xLScwUAOuOJZnoX7NNif3tUDJuVoU0VQRyvtsHH0h7g&dib_tag=se&keywords=os+dois+morrem+no+final&qid=1708396567&sprefix=os+%2Caps%2C295&sr=8-1"> Portuguese edition </a>
-              &middot;
-              <a href= "https://www.amazon.com.br/They-Both-Die-at-End/dp/0062457802/ref=sr_1_1?crid=3R5CM621RT09V&dib=eyJ2IjoiMSJ9.ZsKdeko4gP55DphKjJGULWmUzWkvMDLUP4gCxoZjQ7MQYCJiEcgnh1hxnj-M9vx0gqw-1k111I9pbE5InUNM-AXaly8u0I86Lc_SQksRDVarVacK_VmlYQc3v0-r_fXNd6GYM0IXcyNXW3-PQ80wpXXiXU7LGAU486oko86rugzGElzJhvkgknqoilchJQksI7y7atWe9yn_s2hJHM1WA8sgBFIUJ7zM1QfQ6sPAzlMy-mZVMP0algRYSPU3eVSBVyrnSoQFvnvsms-kGAXoyyZxGz2kCDfN5tjAGnCmNXg.DyScwJD3SlbQhmHC9eY-xKYD1STxmU2jRcMVz5OoyYU&dib_tag=se&keywords=they+both+die+in+the+end&qid=1708443291&sprefix=they+%2Caps%2C221&sr=8-1"> English edition </a>
+            <h2 class="lang featurette-heading" data-en="They Both Die at The End" data-pt="Os Dois Morrem No Final">
+              They Both Die at The End
+            </h2>
+            <h4>Adam Silvera</h4>
+            <p class="lang sinopse"
+               data-en="On September 5, a little after midnight, Death-Cast calls Mateo Torrez and Rufus Emeterio to give them some bad news: They’re going to die today. Mateo and Rufus are total strangers, but, for different reasons, they’re both looking to make a new friend on their End Day. The good news: There’s an app for that. It’s called the Last Friend, and through it, Rufus and Mateo are about to meet up for one last great adventure—to live a lifetime in a single day. Throughout their day, they grapple with the imminent reality of their deaths, forming an intense bond and experiencing a range of emotions. 'They Both Die At The End' showcases elements such as compelling storytelling, realistic portrayal of emotions, and thought-provoking exploration of deep themes, like the value of living in the present moment."
+               data-pt="Em 5 de setembro, pouco depois da meia-noite, a Central da Morte chama Mateo Torrez e Rufus Emeterio para dar-lhes uma má notícia: a de que vão morrer hoje. Mateo e Rufus não se conhecem, mas, por diferentes motivos, ambos estão em busca de fazer um novo amigo em seu Último Dia. A boa notícia: Existe um aplicativo para isso. Chama-se o Último Amigo, e através dele, Rufus e Mateo estão prestes a se encontrar para uma última grande aventura — viver uma vida inteira em um único dia. Ao longo do seu dia, eles lutam com a iminente realidade de suas mortes, formando um vínculo intenso e experimentando uma variedade de emoções. 'Os Dois Morrem no Final' apresenta elementos como uma narrativa envolvente, retrato realista de emoções e exploração provocativa de temas profundos, como o valor de viver o momento presente.">
+               On September 5, a little after midnight, Death-Cast calls Mateo Torrez and Rufus Emeterio to give them some bad news: They’re going to die today. Mateo and Rufus are total strangers, but, for different reasons, they’re both looking to make a new friend on their End Day. The good news: There’s an app for that. It’s called the Last Friend, and through it, Rufus and Mateo are about to meet up for one last great adventure—to live a lifetime in a single day. Throughout their day, they grapple with the imminent reality of their deaths, forming an intense bond and experiencing a range of emotions. 'They Both Die At The End' showcases elements such as compelling storytelling, realistic portrayal of emotions, and thought-provoking exploration of deep themes, like the value of living in the present moment.
             </p>
-            <h6> Read more on: </h6>
+            <h6 class="lang" data-en="Get the book through Amazon here:" data-pt="Compre o livro pela Amazon aqui:"> Get the book through Amazon here: </h6>
             <p>
-              <a href=""></a>
+              <a class="lang" data-en="Portuguese edition" data-pt="Edição em português" 
+                 href= "https://www.amazon.com.br/Os-Dois-Morrem-No-Final/dp/655560302X/ref=mp_s_a_1_1?crid=1NK7YF4D5LXK6&dib=eyJ2IjoiMSJ9.uB9gm63VaSAoKe268zT0lm_iihAsG4TNGFQRWzXcEBD4hKo29cD6foalhTSzpcqL1QsnmPtlDzwzEu1qMFcL6sqq3s29QS4MBn2Ncf6akNXO6NJBrAetPMqw359KkmK8qUFcwVz0DhmeF3CJnxK5I5UOhIBFOCy7-8KcvhOixCmCLt1qKsOgeBy4MEIx0m7fnE5a-FtTSuFpIeghogtgsA.xLScwUAOuOJZnoX7NNif3tUDJuVoU0VQRyvtsHH0h7g&dib_tag=se&keywords=os+dois+morrem+no+final&qid=1708396567&sprefix=os+%2Caps%2C295&sr=8-1">
+                 Portuguese edition
+                </a>
+              &middot;
+              <a class="lang" data-en="English edition" data-pt="Edição em inglês"
+                 href= "https://www.amazon.com.br/They-Both-Die-at-End/dp/0062457802/ref=sr_1_1?crid=3R5CM621RT09V&dib=eyJ2IjoiMSJ9.ZsKdeko4gP55DphKjJGULWmUzWkvMDLUP4gCxoZjQ7MQYCJiEcgnh1hxnj-M9vx0gqw-1k111I9pbE5InUNM-AXaly8u0I86Lc_SQksRDVarVacK_VmlYQc3v0-r_fXNd6GYM0IXcyNXW3-PQ80wpXXiXU7LGAU486oko86rugzGElzJhvkgknqoilchJQksI7y7atWe9yn_s2hJHM1WA8sgBFIUJ7zM1QfQ6sPAzlMy-mZVMP0algRYSPU3eVSBVyrnSoQFvnvsms-kGAXoyyZxGz2kCDfN5tjAGnCmNXg.DyScwJD3SlbQhmHC9eY-xKYD1STxmU2jRcMVz5OoyYU&dib_tag=se&keywords=they+both+die+in+the+end&qid=1708443291&sprefix=they+%2Caps%2C221&sr=8-1">
+                 English edition
+              </a>
+            </p>
+            <h6 class="lang" data-en="Read more on:" data-pt="Leia mais em:">Read more on:</h6>
+            <p>
+              <a href="https://www.goodreads.com/book/show/33385229-they-both-die-at-the-end">goodreads.com</a>
+              &middot;
+              <a href="https://www.scatteredbooks.com/book-reviews/they-both-die-at-the-end-book-summary-a-heartbreaking-tale-by-adam-silvera/">scatteredbooks.com</a>
             </p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="static/images/tbdate.jpg" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="static/images/tbdate.jpg">
           </div>
         </div>
 
@@ -99,20 +128,27 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading"> Jantar Secreto </h2>
-            <h4 class="bookAuthor"> Raphael Montes </h4>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            <h6> Get the book through Amazon here: </h6>
-            <p>
-              <a href= "https://www.amazon.com.br/Jantar-secreto-Raphael-Montes/dp/8535928359/ref=mp_s_a_1_1?crid=902VAGZXN0BT&dib=eyJ2IjoiMSJ9.uiWnIashuFVTLCXeDTKM6XyUbyqqGsE0k545hNGkbKOh6p2SrBqP5_4eExtlgzlgodPtOt09y75ARIHvt3mojVp6Rui6zeA0msVYTI6Olsv-eYUiUfdBe3bEN6ozGzesV7jLGzIpM17d2ZDDIC81_ClmiE1JotD9EUJWzFU5e51tFidNmPLmsu-ors8TRMmlbsmB-vL2b7ZwXX5qrUlpLg.a3rA-JpoeCOOUVZq6BWW6xy0EKkupuBPIxNEEf0hvvM&dib_tag=se&keywords=jantar+secreto&qid=1708396612&sprefix=jan%2Caps%2C339&sr=8-1"> Portuguese edition </a>
+            <h2 class="featurette-heading">Jantar Secreto</h2>
+            <h4>Raphael Montes</h4>
+            <p class="lang sinopse"
+               data-en="A group of young people leaves a small town in Paraná to live in Rio de Janeiro. They rent an apartment in Copacabana and do their best to pay for college and keep their dreams of success alive in the capital city. But money is tight and rent is overdue. To get out of the hole and maintain the apartment, the friends adopt an unorthodox strategy: raising funds through secret dinners, advertised online to an exclusive clientele of the Rio elite. On the menu: human flesh. From there, they become involved in a spiral of crimes, uncovering a network of body smuggling, clandestine slaughterhouses, and eccentric high society, pushing the limits of a perverse nature they never imagined existed in each of them. The book offers insightful critiques and portrays Brazilian society very well. 'Jantar Secreto' is an irresistible read that grips you from the first page, with a plot full of mystery, suspense, and twists."
+               data-pt="Um grupo de jovens deixa uma pequena cidade no Paraná para viver no Rio de Janeiro. Eles alugam um apartamento em Copacabana e fazem o possível para pagar a faculdade e manter vivos seus sonhos de sucesso na capital fluminense. Mas o dinheiro está curto e o aluguel está vencido. Para sair do buraco e manter o apartamento, os amigos adotam uma estratégia heterodoxa: arrecadar fundos por meio de jantares secretos, divulgados pela internet para uma clientela exclusiva da elite carioca. No cardápio: carne humana. A partir daí, eles se envolvem numa espiral de crimes, descobrem uma rede de contrabando de corpos, matadouros clandestinos, grã-finos excêntricos e levam ao limite uma índole perversa que jamais imaginaram existir em cada um deles. O livro faz críticas perspicazes e retrata muito bem a sociedade brasileira. 'Jantar Secreto' é uma leitura irresistível que te prende desde a primeira página, com um enredo cheio de mistério, suspense e reviravoltas.">
+               A group of young people leaves a small town in Paraná to live in Rio de Janeiro. They rent an apartment in Copacabana and do their best to pay for college and keep their dreams of success alive in the capital city. But money is tight and rent is overdue. To get out of the hole and maintain the apartment, the friends adopt an unorthodox strategy: raising funds through secret dinners, advertised online to an exclusive clientele of the Rio elite. On the menu: human flesh. From there, they become involved in a spiral of crimes, uncovering a network of body smuggling, clandestine slaughterhouses, and eccentric high society, pushing the limits of a perverse nature they never imagined existed in each of them. The book offers insightful critiques and portrays Brazilian society very well. 'Jantar Secreto' is an irresistible read that grips you from the first page, with a plot full of mystery, suspense, and twists.
             </p>
-            <h6> Read more on: </h6>
+            <h6 class="lang" data-en="Get the book through Amazon here:" data-pt="Compre o livro pela Amazon aqui:">Get the book through Amazon here:</h6>
             <p>
-              <a href=""></a>
+              <a class="lang" data-en="Portuguese edition" data-pt="Edição em português"
+                 href= "https://www.amazon.com.br/Jantar-secreto-Raphael-Montes/dp/8535928359/ref=mp_s_a_1_1?crid=902VAGZXN0BT&dib=eyJ2IjoiMSJ9.uiWnIashuFVTLCXeDTKM6XyUbyqqGsE0k545hNGkbKOh6p2SrBqP5_4eExtlgzlgodPtOt09y75ARIHvt3mojVp6Rui6zeA0msVYTI6Olsv-eYUiUfdBe3bEN6ozGzesV7jLGzIpM17d2ZDDIC81_ClmiE1JotD9EUJWzFU5e51tFidNmPLmsu-ors8TRMmlbsmB-vL2b7ZwXX5qrUlpLg.a3rA-JpoeCOOUVZq6BWW6xy0EKkupuBPIxNEEf0hvvM&dib_tag=se&keywords=jantar+secreto&qid=1708396612&sprefix=jan%2Caps%2C339&sr=8-1">
+                Portuguese edition
+              </a>
+            </p>
+            <h6 class="lang" data-en="Read more on:" data-pt="Leia mais em:">Read more on:</h6>
+            <p>
+              <a href="https://www.goodreads.com/en/book/show/32681160">goodreads.com</a>
             </p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="static/images/jantarSecreto.jpg" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="static/images/jantarSecreto.jpg">
           </div>
         </div>
 
@@ -120,22 +156,34 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading"> Torto Arado </h2>
-            <h4 class="bookAuthor"> Itamar Vieira Jr. </h4>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            <h6> Get the book through Amazon here: </h6>
-            <p>
-              <a href= "https://www.amazon.com.br/Torto-arado-Itamar-Vieira-Junior/dp/6580309318/ref=mp_s_a_1_1?crid=1PG4DNUK3PU01&dib=eyJ2IjoiMSJ9.ABSZGTQKzwn8egvNUYOqgbAx5amIx93PDssD0QWhwNbFEK9M6tFHn_37cDucsP9sFLl122DZVY9gvN6UsO8JeQVQi751PyZf2Ol_xNc0Prf4iy6o39hoiJdR16dKZSblthM4CExzxTzqDDmO8Tpu_k3VUQayR-llWt2G_7kcvUZ17Rj5BpvGL1-df4dp1NCQ-0XKAUkz7ym83FMGqQflMA.pLZ8nzDI6BhzXQyyEs6RRqHKg9iyDdahu8WiQw4xbqo&dib_tag=se&keywords=torto+arado&qid=1708396673&sprefix=to%2Caps%2C340&sr=8-1"> Portuguese edition </a>
-              &middot;
-              <a href= "https://www.amazon.com.br/Crooked-Plow-Itamar-Vieira-Junior/dp/1839766409/ref=sr_1_1?crid=1H4F6IFS6D9PW&dib=eyJ2IjoiMSJ9.Nd4rxcWb-dqcamjz1a_FwcJv5c-dlzqMhnlie8dNdhIaqt4LetoX-v37zC5uxuHff2G9BVJOO1kk905pIKQzTLgiGbPh9TEih17cR9TuuQw.speErT0F2zuc-Xs12kVku6icxUIg2ZRJCL1n9KK_I6M&dib_tag=se&keywords=torto+arado+em+ingles&qid=1708443405&sprefix=torto+arado+em%2Caps%2C197&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9"> English edition </a>
+            <h2 class="lang featurette-heading" data-en="Crooked Plow" data-pt="Torto Arado">
+              Crooked Plow
+            </h2>
+            <h4>Itamar Vieira Jr.</h4>
+            <p class="lang sinopse"
+               data-en="Bibiana and Belonísia are daughters of workers on a farm in the hinterlands of Bahia, descendants of slaves for whom abolition has never been more than a date marked on the calendar. Intrigued by a mysterious suitcase under their grandmother's bed, they pay for their daring with an accident that will forever change their lives, making them so dependent that one will even be the voice of the other. However, as the years go by, their closeness will unravel with each one's perspective on their surroundings: while Belonísia seems content with farm work and the charms of their father, amid candles and incense, Bibiana perceives from an early age the injustice of the servitude imposed on the family for three decades and decides to fight for land rights and workers' emancipation. In a plot woven with ancient secrets and in the shadow of inequalities that still linger in Brazil today, 'Torto Arado' is a novel with multiple perspectives, beautiful and moving, telling a story of life and death, struggle and redemption, of characters who have crossed time without ever managing to escape anonymity."
+               data-pt="Bibiana e Belonísia são filhas de trabalhadores de uma fazenda no Sertão da Bahia, descendentes de escravos para quem a abolição nunca passou de uma data marcada no calendário. Intrigadas com uma mala misteriosa sob a cama da avó, pagam o atrevimento com um acidente que mudará para sempre as suas vidas, tornando-as tão dependentes que uma será até a voz da outra. Porém, com o avançar dos anos, a proximidade vai desfazer-se com a perspectiva que cada uma tem sobre o que as rodeia: enquanto Belonísia parece satisfeita com o trabalho na fazenda e os encantos do pai, entre velas e incensos, Bibiana percebe desde cedo a injustiça da servidão que há três décadas é imposta à família e decide lutar pelo direito à terra e a emancipação dos trabalhadores. Numa trama tecida de segredos antigos e à sombra de desigualdades que se estendem até hoje no Brasil, Torto Arado é um romance com múltiplas perspectivas, belo e comovente que conta uma história de vida e morte, combate e redenção, de personagens que atravessaram o tempo sem nunca conseguirem sair do anonimato.">
+               Bibiana and Belonísia are daughters of workers on a farm in the hinterlands of Bahia, descendants of slaves for whom abolition has never been more than a date marked on the calendar. Intrigued by a mysterious suitcase under their grandmother's bed, they pay for their daring with an accident that will forever change their lives, making them so dependent that one will even be the voice of the other. However, as the years go by, their closeness will unravel with each one's perspective on their surroundings: while Belonísia seems content with farm work and the charms of their father, amid candles and incense, Bibiana perceives from an early age the injustice of the servitude imposed on the family for three decades and decides to fight for land rights and workers' emancipation. In a plot woven with ancient secrets and in the shadow of inequalities that still linger in Brazil today, "Torto Arado" is a novel with multiple perspectives, beautiful and moving, telling a story of life and death, struggle and redemption, of characters who have crossed time without ever managing to escape anonymity.
             </p>
-            <h6> Read more on: </h6>
+            <h6 class="lang" data-en="Get the book through Amazon here:" data-pt="Compre o livro pela Amazon aqui:">Get the book through Amazon here:</h6>
             <p>
-              <a href=""></a>
+              <a class="lang" data-en="Portuguese edition" data-pt="Edição em português"
+                 href= "https://www.amazon.com.br/Torto-arado-Itamar-Vieira-Junior/dp/6580309318/ref=mp_s_a_1_1?crid=1PG4DNUK3PU01&dib=eyJ2IjoiMSJ9.ABSZGTQKzwn8egvNUYOqgbAx5amIx93PDssD0QWhwNbFEK9M6tFHn_37cDucsP9sFLl122DZVY9gvN6UsO8JeQVQi751PyZf2Ol_xNc0Prf4iy6o39hoiJdR16dKZSblthM4CExzxTzqDDmO8Tpu_k3VUQayR-llWt2G_7kcvUZ17Rj5BpvGL1-df4dp1NCQ-0XKAUkz7ym83FMGqQflMA.pLZ8nzDI6BhzXQyyEs6RRqHKg9iyDdahu8WiQw4xbqo&dib_tag=se&keywords=torto+arado&qid=1708396673&sprefix=to%2Caps%2C340&sr=8-1">
+                 Portuguese edition
+              </a>
+              &middot;
+              <a class="lang" data-en="English edition" data-pt="Edição em inglês"
+                 href= "https://www.amazon.com.br/Crooked-Plow-Itamar-Vieira-Junior/dp/1839766409/ref=sr_1_1?crid=1H4F6IFS6D9PW&dib=eyJ2IjoiMSJ9.Nd4rxcWb-dqcamjz1a_FwcJv5c-dlzqMhnlie8dNdhIaqt4LetoX-v37zC5uxuHff2G9BVJOO1kk905pIKQzTLgiGbPh9TEih17cR9TuuQw.speErT0F2zuc-Xs12kVku6icxUIg2ZRJCL1n9KK_I6M&dib_tag=se&keywords=torto+arado+em+ingles&qid=1708443405&sprefix=torto+arado+em%2Caps%2C197&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                 English edition
+              </a>
+            </p>
+            <h6 class="lang" data-en="Read more on:" data-pt="Leia mais em:">Read more on:</h6>
+            <p>
+              <a href=" https://www.goodreads.com/en/book/show/44024444">goodreads.com</a>
             </p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="static/images/tortoArado.jpg" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="static/images/tortoArado.jpg">
           </div>
         </div>
 
@@ -143,22 +191,36 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading"> Radio Silence </h2>
-            <h4 class="bookAuthor"> Alice Oseman </h4>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            <h6> Get the book through Amazon here: </h6>
+            <h2 class=" lang featurette-heading" data-en="A Thousand Splendid Suns" data-pt="A Cidade do Sol">
+              A Thousand Splendid Suns
+            </h2>
+            <h4>Khaled Hosseini</h4>
+            <p class="lang sinopse"
+               data-en="Mariam is only fifteen when she is sent to Kabul to marry the bitter Rasheed, who is thirty years her senior. Nearly two decades later, in growing unrest, the same tragedy strikes fifteen-year-old Laila, who must leave her home and join Mariam's unhappy household. Laila and Mariam find consolation in each other, their friendship growing so deep and strong that they become like family to one another and help each other overcome the challenges they face. As time passes, the Taliban begins to dominate Afghanistan, the streets of Kabul loud with the sound of gunfire and bombs, life becoming a desperate struggle against starvation, brutality, and fear, women's endurance tested beyond their worst imaginings. However, love can move people to act in unexpected ways, leading them to overcome the most daunting obstacles with surprising heroism. 'A Thousand Splendid Suns' portrays a wounded country and a story of family and friendship, of an unforgiving time, an unlikely bond, and an indestructible love, a book that continues to captivate and move readers worldwide."
+               data-pt="Mariam tem apenas quinze anos quando é enviada para Cabul para se casar com o amargo Rasheed, trinta anos mais velho que ela. Quase duas décadas depois, em crescente agitação, a mesma tragédia atinge Laila, de quinze anos, que deve deixar sua casa e se juntar ao infeliz lar de Mariam. Laila e Mariam encontram consolo uma na outra, sua amizade se torna tão profunda e forte que são como família uma para a outra e se ajudam a superar os desafios que enfrentam. Com o passar do tempo, o Talibã começa a dominaro Afeganistão, as ruas de Cabul ecoam com o som de tiros e bombas, a vida se torna uma luta desesperada contra a fome, a brutalidade e o medo, a resistência das mulheres é testada além de suas piores expectativas. No entanto, o amor pode mover as pessoas a agir de maneiras inesperadas, levando-as a superar os obstáculos mais assustadores com um heroísmo surpreendente. 'A Cidade do Sol' mostra um país ferido e uma história de família e amizade, de um tempo implacável, de um vínculo improvável e de um amor indestrutível, um livro que continua a cativar e emocionar leitores em todo o mundo.">
+               Mariam is only fifteen when she is sent to Kabul to marry the bitter Rasheed, who is thirty years her senior. Nearly two decades later, in growing unrest, the same tragedy strikes fifteen-year-old Laila, who must leave her home and join Mariam's unhappy household. Laila and Mariam find consolation in each other, their friendship growing so deep and strong that they become like family to one another and help each other overcome the challenges they face. As time passes, the Taliban begins to dominate Afghanistan, the streets of Kabul loud with the sound of gunfire and bombs, life becoming a desperate struggle against starvation, brutality, and fear, women's endurance tested beyond their worst imaginings. However, love can move people to act in unexpected ways, leading them to overcome the most daunting obstacles with surprising heroism. "A Thousand Splendid Suns" portrays a wounded country and a story of family and friendship, of an unforgiving time, an unlikely bond, and an indestructible love, a book that continues to captivate and move readers worldwide.
+              </p>
+            <h6 class="lang" data-en="Get the book through Amazon here:" data-pt="Compre o livro pela Amazon aqui:">Get the book through Amazon here:</h6>
             <p>
-              <a href= "https://www.amazon.com.br/R%C3%81DIO-SIL%C3%8ANCIO-SELO-Alice-Oseman/dp/655532158X/ref=sr_1_2?crid=1Q5USC14MMVTZ&dib=eyJ2IjoiMSJ9.l89EV-vikfkVIkNslSHlnK--Sr2y6WfDtyHUSONqx7D-sdxV5l0n6WPOM1W2AknRpqIiOMZZ7viyxOFl0B-wrhx0Gv9d1E9X_19GpjS0cjorXSJIfVVyFw6svYjDFeZuGfAAVz07Ja3QYBhyti7T2X2IxAtSvSRIyZmoN3jGZXDuECg5Yzn-lmRRB_wH8v4LoXYeFwn_WW89yq6jZFt6-DFAL6buOrAZFTJUARlBMdsVU2rrTcV_3DzeVw1iR0NzUxMLa-l8n7RKGlc2DliY4Mp-1vdNqcvJGjE7yv9nR_8.oA-LSTDseSCG-FqpcvDVGY_EyE0NfqreN3Sa57kIS3w&dib_tag=se&keywords=radio+silence+hardcover&qid=1708443636&sprefix=radio+sil%2Caps%2C340&sr=8-2"> Portuguese edition </a>
+              <a class="lang" data-en="Portuguese edition" data-pt="Edição em português"
+                 href= "https://www.amazon.com.br/Cidade-do-Sol-Khaled-Hosseini/dp/8525060305/ref=sr_1_1?crid=2OA8BTSTG08RD&dib=eyJ2IjoiMSJ9.jZRDX_YZxorrZonViY0nFCjJuPXAIMFoSp1Vnu1JEO_NN81GRrtCcKjpmOesLSej1dlLNiFOcEfkXYwStwmO3Fxv_5ho3IXjPqUicRLljuP96AifKYW308j3e8gQDC99jt-ht0IszGXodF8fI3xJEf-OgXMqpJH7z-hM5gE89luHrMRo90hubsYaBSu72D_CQgY_qipzXbfqZdrN5IA1R2ByztpiqKArVjVUijPuW8IIBgpQkJnsbg5HGN3TxasZeeEtvl42uL7lKt99DtEH419HdlQr5Kh7_kvdXQZOWqI._-WSC9ubXEw9YIPzZ6m6iW-3KNstVUIeVkjYIFNBJHI&dib_tag=se&keywords=a+cidade+do+sol&qid=1708443705&sprefix=a+cidad%2Caps%2C211&sr=8-1">
+                 Portuguese edition
+              </a>
               &middot;
-              <a href= "https://www.amazon.com.br/Radio-Silence-Alice-Oseman/dp/0062335723/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2Q0WKZ2VPIB11&dib=eyJ2IjoiMSJ9.xlBLb1N0zpRA466zZcjhGqu7lVkTYVIh0KMA2VNGQIBvt0X4XXxTmtRWzk_UkrqEG6QFUlo1ledAF1-R-IZihQZiPvQdy4LL_OvZqd8C0eCBDMN3BgRjgDFDcWiAelyt57B4yNt6pZS9lcbuGn5ZLM-RKLVSSeUox5vvmsxTI9Y6ut-UobOOhDhVqx7lpE6wWVkY6F-4EcI5sdBt1PufNsTw0sqewp6n8pFvG_Ouyjqe2la2Tumn-S0gdYlnpmJJS4oVDXlw8B2n8E0t-j9QpuPuI7PAzbQZWVCIM0qGphc.oh6XY04jBbuhORzPNpk60jBNCv4_j5w1Dwb1tslIheo&dib_tag=se&keywords=radio+silence&qid=1708443659&sprefix=radio+silence+%2Caps%2C201&sr=8-1"> English edition </a>
+              <a class="lang" data-en="English edition" data-pt="Edição em inglês"
+                 href= "https://www.amazon.com.br/Thousand-Splendid-Suns-Khaled-Hosseini/dp/159448385X/ref=sr_1_1?crid=3RTHHPRBUIWYF&dib=eyJ2IjoiMSJ9.7QGcG9DLZqmcz919GTLhpBoMsiGE-rPlSzGaU57uDQhRaRv-7Dc04ZNYALNyplPd4bKXj4_kwcOabtKCR4E6Y4I-fdav3TijyOtb2L6wJOiPp2bqB2diIfKFPSPs4N_0zXSPrpK-B4JKLu5ZJEANANg-TnU95rtY48t-SQ1SbCQni1B-N65WnFjrlT8DIa3Tw6hv8Vrdl4aY8Lvv5hP20CUNBHUcVVfk2ceO8qaA7GPiNDpqHQLZHD_sxV9PBeZudbEQn4x9YeYWHBp6bE50OdD4o8h_uwb-IV-msorgmFc.ET9W3_LKw3oFNrQnm4_P4pbtic5AmVTRPE_iOORLdTQ&dib_tag=se&keywords=a+thousand+splendid+suns&qid=1708443747&sprefix=a+th%2Caps%2C199&sr=8-1">
+                 English edition
+              </a>
             </p>
-            <h6> Read more on: </h6>
+            <h6 class="lang" data-en="Read more on:" data-pt="Leia mais em:">Read more on:</h6>
             <p>
-              <a href=""></a>
+              <a href="https://www.goodreads.com/book/show/128029.A_Thousand_Splendid_Suns">goodreads.com</a>
+              &middot;
+              <a href="https://rvalibrary.org/shelf-respect/teens/by-teens-for-teens-a-thousand-splendid-suns-the-last-thing-he-told-me/">rvalibrary.org</a>
             </p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="static/images/radioSilence.jpg" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="static/images/aCidadeDoSol.jpg">
           </div>
         </div>
 
@@ -166,45 +228,34 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading"> A Thousand Splendid Suns </h2>
-            <h4 class="bookAuthor"> Khaled Hosseini </h4>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            <h6> Get the book through Amazon here: </h6>
-            <p>
-              <a href= "https://www.amazon.com.br/Cidade-do-Sol-Khaled-Hosseini/dp/8525060305/ref=sr_1_1?crid=2OA8BTSTG08RD&dib=eyJ2IjoiMSJ9.jZRDX_YZxorrZonViY0nFCjJuPXAIMFoSp1Vnu1JEO_NN81GRrtCcKjpmOesLSej1dlLNiFOcEfkXYwStwmO3Fxv_5ho3IXjPqUicRLljuP96AifKYW308j3e8gQDC99jt-ht0IszGXodF8fI3xJEf-OgXMqpJH7z-hM5gE89luHrMRo90hubsYaBSu72D_CQgY_qipzXbfqZdrN5IA1R2ByztpiqKArVjVUijPuW8IIBgpQkJnsbg5HGN3TxasZeeEtvl42uL7lKt99DtEH419HdlQr5Kh7_kvdXQZOWqI._-WSC9ubXEw9YIPzZ6m6iW-3KNstVUIeVkjYIFNBJHI&dib_tag=se&keywords=a+cidade+do+sol&qid=1708443705&sprefix=a+cidad%2Caps%2C211&sr=8-1"> Portuguese edition </a>
-              &middot;
-              <a href= "https://www.amazon.com.br/Thousand-Splendid-Suns-Khaled-Hosseini/dp/159448385X/ref=sr_1_1?crid=3RTHHPRBUIWYF&dib=eyJ2IjoiMSJ9.7QGcG9DLZqmcz919GTLhpBoMsiGE-rPlSzGaU57uDQhRaRv-7Dc04ZNYALNyplPd4bKXj4_kwcOabtKCR4E6Y4I-fdav3TijyOtb2L6wJOiPp2bqB2diIfKFPSPs4N_0zXSPrpK-B4JKLu5ZJEANANg-TnU95rtY48t-SQ1SbCQni1B-N65WnFjrlT8DIa3Tw6hv8Vrdl4aY8Lvv5hP20CUNBHUcVVfk2ceO8qaA7GPiNDpqHQLZHD_sxV9PBeZudbEQn4x9YeYWHBp6bE50OdD4o8h_uwb-IV-msorgmFc.ET9W3_LKw3oFNrQnm4_P4pbtic5AmVTRPE_iOORLdTQ&dib_tag=se&keywords=a+thousand+splendid+suns&qid=1708443747&sprefix=a+th%2Caps%2C199&sr=8-1"> English edition </a>
+            <h2 class=" lang featurette-heading" data-en="Normal People" data-pt="Pessoas Normais">
+              Normal People
+            </h2>
+            <h4>Sally Rooney</h4>
+            <p class="lang sinopse"
+              data-en="At school, Connell and Marianne act as if they don't know each other. Connell is popular and well-adjusted, while Marianne is lonely, proud, and private. However, when Connell picks up his mother from her job at Marianne's house, a strong connection develops between them. A year later, they both studying at Trinity College in Dublin. Marianne thrives in the social scene, while Connell hangs back, feeling shy and uncertain. Over the years, they orbit each other, straying toward other people and possibilities but always magnetically, irresistibly drawn back together. As Marianne faces self-destructive tendencies and Connell searches for meaning elsewhere, they must confront how far they're willing to go to save each other. 'Normal People' explores themes such as friendship, love, identity, social class, and mental health, providing an insightful perspective on the complexities of human relationships."
+              data-pt="Na escola, Connell e Marianne agem como se não se conhecessem. Connell é popular e bem ajustado, enquanto Marianne é solitária, orgulhosa e reservada. No entanto, quando Connell vai buscar sua mãe no trabalho na casa de Marianne, uma forte conexão se desenvolve entre eles. Um ano depois, ambos estudam na Trinity College em Dublin. Marianne prospera na cena social, enquanto Connell fica para trás, tímido e incerto. Ao longo dos anos, eles orbitam um ao outro, se desviando em direção a outras pessoas e possibilidades, mas sempre atraídos magnética e irresistivelmente de volta um para o outro. Conforme Marianne enfrenta tendências autodestrutivas e Connell busca significados em outro lugar, eles precisam ver até onde estão dispostos a ir para salvarem um ao outro. 'Pessoas Normais' explora temas como amizade, amor, identidade, classe social e saúde mental, proporcionando uma perspectiva esclarecedora sobre as complexidades dos relacionamentos humanos.">
+              At school, Connell and Marianne act as if they don't know each other. Connell is popular and well-adjusted, while Marianne is lonely, proud, and private. However, when Connell picks up his mother from her job at Marianne's house, a strong connection develops between them. A year later, they both studying at Trinity College in Dublin. Marianne thrives in the social scene, while Connell hangs back, feeling shy and uncertain. Over the years, they orbit each other, straying toward other people and possibilities but always magnetically, irresistibly drawn back together. As Marianne faces self-destructive tendencies and Connell searches for meaning elsewhere, they must confront how far they're willing to go to save each other. 'Normal People' explores themes such as friendship, love, identity, social class, and mental health, providing an insightful perspective on the complexities of human relationships.
             </p>
-            <h6> Read more on: </h6>
+            <h6 class="lang" data-en="Get the book through Amazon here:" data-pt="Compre o livro pela Amazon aqui:">Get the book through Amazon here:</h6>
             <p>
-              <a href=""></a>
+              <a class="lang" data-en="Portuguese edition" data-pt="Edição em português"
+                 href= "https://www.amazon.com.br/Pessoas-normais-Sally-Rooney/dp/8535932569/ref=sr_1_1?crid=5MTPSRNX8VE9&dib=eyJ2IjoiMSJ9.FanMorwGIDfB2niItk5bY7rXnTsJEFGpbKyKK-QbOF0vRSylLyFsoYDli0Ntpfdfu7vMQ0sd8eRRIJLD1Dkr2mdlsO1dkBqYRhCH_wdXg3Lhd4bQmAmssIN6ffTagnSeNw1_ZBMY6CcZBfrRrkaHfu9vhzpdg-Jqic0EeP7CyNZwMhYQWQoB3Ygy0zXXhf3LtyEgxucTUeuLIT2PEy_YdOQv537qkQyQQQgI85nPIDtfS4n8e_3xnj2PyQqPTv4d36EQMu1hQZt_ibKOcxU_uhMGdGU9B9BeI-ww1wEPzrk.ufPDfp_hKDFyuMswbHP7LoqLRbOtm-85ZZi6pv9nibc&dib_tag=se&keywords=pessoas+normais&qid=1708443790&sprefix=pess%2Caps%2C216&sr=8-1">
+                 Portuguese edition
+              </a>
+              &middot;
+              <a class="lang" data-en="English edition" data-pt="Edição em inglês"
+                 href= "https://www.amazon.com.br/Normal-People-Novel-Sally-Rooney/dp/1984822187/ref=sr_1_4?crid=5MTPSRNX8VE9&dib=eyJ2IjoiMSJ9.FanMorwGIDfB2niItk5bY7rXnTsJEFGpbKyKK-QbOF0vRSylLyFsoYDli0Ntpfdfu7vMQ0sd8eRRIJLD1Dkr2mdlsO1dkBqYRhCH_wdXg3Lhd4bQmAmssIN6ffTagnSeNw1_ZBMY6CcZBfrRrkaHfu9vhzpdg-Jqic0EeP7CyNZwMhYQWQoB3Ygy0zXXhf3LtyEgxucTUeuLIT2PEy_YdOQv537qkQyQQQgI85nPIDtfS4n8e_3xnj2PyQqPTv4d36EQMu1hQZt_ibKOcxU_uhMGdGU9B9BeI-ww1wEPzrk.ufPDfp_hKDFyuMswbHP7LoqLRbOtm-85ZZi6pv9nibc&dib_tag=se&keywords=pessoas+normais&qid=1708443790&sprefix=pess%2Caps%2C216&sr=8-4">
+                 English edition
+              </a>
+            </p>
+            <h6 class="lang" data-en="Read more on:" data-pt="Leia mais em:">Read more on:</h6>
+            <p>
+              <a href="https://www.goodreads.com/en/book/show/41057294">goodreads.com</a>
             </p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="static/images/aCidadeDoSol.jpg" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading"> Normal People </h2>
-            <h4 class="bookAuthor"> Sally Rooney </h4>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            <h6> Get the book through Amazon here: </h6>
-            <p>
-              <a href= "https://www.amazon.com.br/Pessoas-normais-Sally-Rooney/dp/8535932569/ref=sr_1_1?crid=5MTPSRNX8VE9&dib=eyJ2IjoiMSJ9.FanMorwGIDfB2niItk5bY7rXnTsJEFGpbKyKK-QbOF0vRSylLyFsoYDli0Ntpfdfu7vMQ0sd8eRRIJLD1Dkr2mdlsO1dkBqYRhCH_wdXg3Lhd4bQmAmssIN6ffTagnSeNw1_ZBMY6CcZBfrRrkaHfu9vhzpdg-Jqic0EeP7CyNZwMhYQWQoB3Ygy0zXXhf3LtyEgxucTUeuLIT2PEy_YdOQv537qkQyQQQgI85nPIDtfS4n8e_3xnj2PyQqPTv4d36EQMu1hQZt_ibKOcxU_uhMGdGU9B9BeI-ww1wEPzrk.ufPDfp_hKDFyuMswbHP7LoqLRbOtm-85ZZi6pv9nibc&dib_tag=se&keywords=pessoas+normais&qid=1708443790&sprefix=pess%2Caps%2C216&sr=8-1"> Portuguese edition </a>
-              &middot;
-              <a href= "https://www.amazon.com.br/Normal-People-Novel-Sally-Rooney/dp/1984822187/ref=sr_1_4?crid=5MTPSRNX8VE9&dib=eyJ2IjoiMSJ9.FanMorwGIDfB2niItk5bY7rXnTsJEFGpbKyKK-QbOF0vRSylLyFsoYDli0Ntpfdfu7vMQ0sd8eRRIJLD1Dkr2mdlsO1dkBqYRhCH_wdXg3Lhd4bQmAmssIN6ffTagnSeNw1_ZBMY6CcZBfrRrkaHfu9vhzpdg-Jqic0EeP7CyNZwMhYQWQoB3Ygy0zXXhf3LtyEgxucTUeuLIT2PEy_YdOQv537qkQyQQQgI85nPIDtfS4n8e_3xnj2PyQqPTv4d36EQMu1hQZt_ibKOcxU_uhMGdGU9B9BeI-ww1wEPzrk.ufPDfp_hKDFyuMswbHP7LoqLRbOtm-85ZZi6pv9nibc&dib_tag=se&keywords=pessoas+normais&qid=1708443790&sprefix=pess%2Caps%2C216&sr=8-4"> English edition </a>
-            </p>
-            <h6> Read more on: </h6>
-            <p>
-              <a href=""></a>
-            </p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="static/images/normalPeople.jpg" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="static/images/normalPeople.jpg">
           </div>
         </div>
 
@@ -217,18 +268,20 @@
 
       <!-- FOOTER -->
       <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <h6>&copy; By Letícia Almeida 2024 &middot; <a href="https://github.com/leticosta4"> GitHub profile </a> &middot; <a href="#">link do meu futuro perfil no linkedin</a></h6>
+        <p class="float-right"><a class="lang" data-en="Back to top" data-pt="De volta ao topo" href="#">Back to top</a></p>
+        <h6>&copy; By Letícia Almeida 2024
+          &middot;
+          <a class="lang" data-en="GitHub profile" data-pt="Perfil no github" href="https://github.com/leticosta4">GitHub profile</a>
       </footer>
     </main>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <script> window.alert("AVISO:\n\nO padrão deste site é o inglês como idioma, já que é o convecional para a área de tecnologia, sabe?\n\nMas não se preocupe! Tem um botão que muda o idioma para o português logo NO CANTO SUPERIOR DIREITO da página.\n\nSe gostou do código, ele está disponível no meu GitHub, linkado logo no final da página.\n\nGrata, Let. <3")</script>
+    
+    <!-- Bootstrap core JavaScript (Placed at the end of the document so the pages load faster)-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="static/js/bootstrap.min.js"></script>
-    <noscript> You need to enable JavaScript to view the full website </noscript>
-    <!-- <script src="../../assets/js/vendor/popper.min.js"></script> --> <!--talvez isso não seja tão necessário-->
+    <script src="static/js/buttons.js"></script>
+    <noscript>You need to enable JavaScript to view the full website</noscript>
     </body>
 </html>

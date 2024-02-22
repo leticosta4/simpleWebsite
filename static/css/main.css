@@ -1,22 +1,60 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-#checkOut {
-  color: #073eb6;
+:root { 
+  --deep-blue: #270e6b;
+  --light-blue: #90aed1;
+  --gray: #5a5a5a;
+  --light-gray: #b8b8b8;
+  --dark-gray: #30302b;
+  --vanilla: #e7e6a8;
+  --green: #106e20;
+  --yellow: #f7f45d;
+  --red: #eb2517;
+  --white: #ffffff;
+  --black: #000000;
 }
 
-body {
+  body {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: #000000;
+    background-color: var(--bg);
+    color: var(--fontColor);
   }
-  
+
+  #navbar {
+    background-color: var(--h4FontColor);
+  }
+
+  #mainName {
+    color: var(--btnFontColor);
+  }
+
+  #themeBtn{
+    position: fixed; 
+    right: 153px; 
+    color: var(--btnFontColor);
+    background-color: var(--btnBg); 
+    font-family: fantasy;
+    font-size: large;
+  }
+
+  #languageBtn{
+    position: fixed; 
+    right: 20px; 
+    width: 120px;
+    color: var(--h4FontColor);
+    background-color: var(--bg);
+    font-family: fantasy;
+    font-size: large;
+  }
+
+  #jumbo { 
+    background-color: var(--boardBgColor);
+  }
+  #welcome {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
   /* MARKETING CONTENT
   -------------------------------------------------- */
-  /* Featurettes
-  ------------------------- */
-  
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
   }
@@ -26,21 +64,25 @@ body {
     font-weight: 300;
     line-height: 1;
     letter-spacing: -.05rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
-  .bookAuthor {
+  h4 {
     font-style: italic;
-    color: #190847;
+    font-family:fantasy ;
+    color: var(--h4FontColor);
+  }
+
+  .sinopse {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-
   h6 {
-    color: #5a5a5a;
+    color: var(--h6FontColor);
   }
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */
-  
   @media (min-width: 40em) {
     .featurette-heading {
       font-size: 50px;
@@ -52,4 +94,25 @@ body {
       margin-top: 7rem;
     }
   }
+
+  .light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);  
+    --boardBgColor: var(--vanilla);
+    --h4FontColor: var(--deep-blue);
+    --h6FontColor: var(--gray);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --boardBgColor: var(--dark-gray);
+    --h4FontColor: var(--light-blue);
+    --h6FontColor: var(--light-gray);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+  }
+
   
