@@ -94,6 +94,8 @@
       margin-top: 7rem;
     }
   }
+  /* still up to enhance the website: 
+  add a responsive css with media query compatible to smartphones screens */
 
   .light-theme {
     --bg: var(--white);
